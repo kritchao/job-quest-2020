@@ -1,0 +1,13 @@
+## Thai's Joke
+- using sequelize to communicate with database.
+- using bearer token to authenticate username and password to allow logged-in user to create or delete their jokes.
+- set config.json file in config for database connection
+- run index.js
+- `POST /users/register` using body URLencoded with key: username, password for create a user
+- `POST /users/login` with same key as register to login and use bearer token to authorize joke's accessibility
+- `GET /` Get all jokes.
+- `POST /` Add new joke. using body with key: joke
+- `GET /:id` Get joke by id.
+- `DELETE /:id` Delete joke.
+- `POST /:id/like` Like a joke.
+- `POST /:id/dislike` Dislike a joke.
